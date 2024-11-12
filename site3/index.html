@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anonymous.238のムービーアウトプットサイト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .movie-title {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .review {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>anonymous.238のアウトプットサイト</h1>
+    <div>
+        <p class="movie-title" onclick="toggleReview('review1')">ダークナイトライジング</p>
+        <div id="review1" class="review">
+            <p>概要「引きこもり生活をしていたバットマンことブルースウェインがゴッサムシティに再び現れた凶悪犯罪者を止めるべくバットマンとして再び街に現れる」<br><br>感想　『バットマンの新兵器が変わらずクールで映像も綺麗だった。レイチェルの事が忘れられず前へ進めないウェインへ真実を伝えるアルフレッドと過去を消して人生をやり直したいセリーナを通して前へ進む事への重要性を伝えたかったのかも知れない。ハービーの真実がベインの手に渡ったゴードンの手紙によって世に出て偽りの英雄物語により不当に収監されていた囚人たち、そして上級階層の人間たちにより抑圧、搾取されてきた市民たちがゴッサムシティの実権を取り戻す為に私刑を執行する。何故ベインの仕掛けた原子力爆弾の圏内に居ながら悠長にしていられたのかは不明だが、資本社会において広がり過ぎた格差と階級がこの事態を招いた。ミランダにプログラムを上書きされて爆発を阻止する術を完全に失ったバットマンが爆弾を運んで海の沖へ行き市の危機を救った。ダークナイトの時とは違い嘘偽りなくバットマンが英雄になったように思う。その後ブルースウェインの墓の前で謝罪をしているアルフレッドの姿を見て彼がゴッサムシティでの出来事をテレビで見ている間にどんな心情だったかを想像して胸が痛くなった。遺産は全てアルフレッドに引き継がれ、家や家具などは孤児の為に使われる。その後アルフレッドが旅先でセリーナと共にいるウェインを見つけるが映画の冒頭で言っていた通り互いに会話をする事はなかった。アルフレッドはブルースが新しい人生を歩んでいればそれでいいと思っているから。筆者もブルースが今も新しい土地でセリーナと共に幸せに暮らしている事を願っている。』<br><br>2024 11/13
+            </p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review2')">映画タイトル2</p>
+        <div id="review2" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review3')">映画タイトル3</p>
+        <div id="review3" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review4')">映画タイトル4</p>
+        <div id="review4" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review5')">映画タイトル5</p>
+        <div id="review5" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review6')">映画タイトル6</p>
+        <div id="review6" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review7')">映画タイトル3</p>
+        <div id="review7" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review8')">映画タイトル3</p>
+        <div id="review8" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+
+        <p class="movie-title" onclick="toggleReview('review9')">映画タイトル3</p>
+        <div id="review9" class="review">
+            <p>この映画の感想はここに記述されます。</p>
+        </div>
+     </div>
+
+    <script>
+        function toggleReview(id) {
+            const review = document.getElementById(id);
+            if (review.style.display === "none" || !review.style.display) {
+                review.style.display = "block";
+            } else {
+                review.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
